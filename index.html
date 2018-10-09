@@ -18,11 +18,13 @@
 	</p>
 
     <div v-if="charts.barData2 && currentRoute === '/bar'">
+      <h4> Popularity of Local Dishes </h4>
       Chart: {{charts.barData2.title }}
       <column-chart :data="charts.barData2.data"></column-chart>
     </div>
 
     <div v-if="charts.lineData2 && currentRoute === '/line'">
+      <h4> Amount of Intertia to get out of bed each day </h4>
 	    Chart: {{charts.lineData2.title}}
       <line-chart :data="charts.lineData2.data"></line-chart>
     </div>
